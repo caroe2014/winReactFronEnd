@@ -75,12 +75,12 @@ if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
   cd "$DEPLOYMENT_SOURCE"
   echo "********************"
   echo "Running npm install"
-  echo "npm version <<<<<<<"
+  echo "yarn version <<<<<<"
   eval yarn --version
   eval yarn install
   exitWithMessageOnError "npm failed"
   echo "Building react app"
-  eval yarn run build
+  eval yarn build
   exitWithMessageOnError "react build failed"
  cd - > /dev/null
 fi
