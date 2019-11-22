@@ -75,7 +75,7 @@ if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
   cd "$DEPLOYMENT_SOURCE"
   echo "********************"
   echo "installing yarn <<<<<<"
-  npm install -g yarn
+  eval npm install -g yarn
   echo "yarn version <<<<<<"
   yarn --version
   eval yarn install
