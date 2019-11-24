@@ -74,15 +74,14 @@ echo Handling react app deployment.
 if [ -e "$DEPLOYMENT_SOURCE/package.json" ]; then
   cd "$DEPLOYMENT_SOURCE"
   echo "********************"
-  echo "installing yarn <<<<<<"
-  eval npm install -g yarn
+  # eval npm install -g yarn
   echo "yarn version <<<<<<"
-  yarn --version
-  eval yarn install
+  npm--version
+  eval npm install
   echo "Running npm install"
   exitWithMessageOnError "yarn failed"
   echo "Building react app"
-  eval yarn builkd
+  eval npm build
   exitWithMessageOnError "react build failed"
  cd - > /dev/null
 fi
