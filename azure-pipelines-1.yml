@@ -8,6 +8,11 @@ trigger:
 
 pool:
   vmImage: 'windows-latest'
+- task: AzureAppServiceManage@0
+  inputs:
+    azureSubscription: 'edgaroAzureSubscription092019 (1fbe7963-8a53-4dd9-a5cb-cef8f01b77c5)'
+    Action: 'Start Azure App Service'
+    WebAppName: 'v-edcaroWinReactJSWebApp'
 
 steps:
 - task: NodeTool@0
