@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/v-edcaro/NewWindowsReactApp/_apis/build/status/caroe2014.winReactFronEnd?branchName=master)](https://dev.azure.com/v-edcaro/NewWindowsReactApp/_build/latest?definitionId=11&branchName=master)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
