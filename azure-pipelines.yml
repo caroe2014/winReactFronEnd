@@ -4,6 +4,16 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'edgaroAzureSubscription092019(1fbe7963-8a53-4dd9-a5cb-cef8f01b77c5)'
+    appType: 'webApp'
+    WebAppName: 'v-edcaroWinReactWevApp'
+    packageForLinux: '$(System.DefaultWorkingDirectory)\**\Application*.zip'
+    enableCustomDeployment: true
+    DeploymentType: 'zipDeploy'
+    TakeAppOfflineFlag: false
 - master
 
 pool:
